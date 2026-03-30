@@ -48,16 +48,20 @@ export default function Footer() {
                         <ul className="space-y-3 text-body text-sm">
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                                <span>123 Solar Tech Park, Industrial Area, Gujarat, India 380001</span>
+                                <span>J/2 Mahavir nagar, near milk federation, Shivaji nagar raod, Jalgaon, Maharashtra, India, 425001</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                                <span>+91 98765 43210</span>
+                                <span>+91 9423915121</span>
                             </li>
                             <li className="flex items-center gap-3">
+                                <Phone className="w-5 h-5 text-primary shrink-0" />
+                                <span>+91 9158768101</span>
+                            </li>
+                            {/* <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-primary shrink-0" />
                                 <span>hello@shrinathijisolar.com</span>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>

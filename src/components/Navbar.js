@@ -49,7 +49,9 @@ export default function Navbar() {
                 <a href="#calculator" className="hover:text-primary transition">Calculator</a>
             </div>
             <button className="hidden md:block bg-gradient-to-r from-primary to-primary text-onPrimary font-bold py-2 px-6 rounded-full hover:shadow-lg shadow-primary/30 transition cursor-pointer">
-                Get Quote
+                <a href='https://wa.me/919876543210?text=Hello, I am interested in your solar products.'>
+                    Get Free Quote
+                </a>
             </button>
         </nav>
     );
