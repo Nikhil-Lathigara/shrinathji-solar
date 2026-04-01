@@ -41,7 +41,7 @@ const TiltCard = ({ title, description, icon: Icon, image, features, delay }) =>
                         View Details
                     </button> */}
                     <a
-                        href={`https://wa.me/919423915121?text=I'm interested in ${encodeURIComponent(title)}`}
+                        href={`https://wa.me/917020919660?text=I'm interested in ${encodeURIComponent(title)}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full py-3 bg-[#25D366] text-white rounded-lg hover:bg-[#1ebe5d] transition text-sm font-bold flex items-center justify-center gap-2 cursor-pointer shadow-md hover:shadow-lg"

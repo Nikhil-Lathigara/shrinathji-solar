@@ -66,5 +66,5 @@ export default function BackgroundParticles({ color = 0xF5A623, count = 300, cla
         };
     }, [color, count]);
 
-    return <div ref={containerRef} className={`absolute inset-0 z-0 pointer-events-none ${className}`} />;
+    return <div ref={containerRef} className={`absolute inset-0 z-99 pointer-events-none ${className}`} />;
 }

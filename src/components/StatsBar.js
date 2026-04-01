@@ -44,8 +44,8 @@ export default function StatsBar() {
     ];
 
     return (
-        <section className="relative z-10 border-y border-white/10 bg-primary py-10 overflow-hidden">
-            <BackgroundParticles count={200} className="opacity-40" />
+        <section className="relative z-10 bg-primary/90 py-6 overflow-hidden">
+            <BackgroundParticles count={300} />
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/10">
@@ -58,10 +58,10 @@ export default function StatsBar() {
                             viewport={{ once: true }}
                             className="p-4"
                         >
-                            <div className="text-4xl md:text-5xl font-display font-bold text-onPrimary mb-2">
+                            <div className="text-white font-bold text-2xl md:text-3xl font-display mb-2">
                                 <Counter target={stat.target} suffix={stat.suffix} />
                             </div>
-                            <div className="text-sm text-black uppercase tracking-wider">{stat.label}</div>
+                            <div className="text-cyan-900 text-xs tracking-widest">{stat.label}</div>
                         </motion.div>
                     ))}
                 </div>

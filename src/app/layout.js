@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
 
 export const metadata = {
-  title: "Shrinathiji Solar - Power Your World With The Sun",
+  title: "Shrinathji Solar Enterprise - Power Your World With The Sun",
   description: "India's Trusted Solar Brand - Premium solar solutions for homes, businesses, and industry since 2005.",
 };
 

@@ -16,7 +16,7 @@ export default function Loader() {
     return (
         <div className="fixed inset-0 bg-background z-[10000] flex flex-col justify-center items-center transition-opacity duration-500">
             <div className="w-15 h-15 rounded-full bg-primary shadow-lg shadow-primary/30 animate-pulse-slow mb-4"></div>
-            <h2 className="font-display text-2xl font-bold tracking-widest text-heading">SHRINATHIJI SOLAR</h2>
+            <h2 className="font-display text-2xl font-bold tracking-widest text-heading">Shrinathji Solar Enterprise</h2>
         </div>
     );
 }

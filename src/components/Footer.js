@@ -10,7 +10,7 @@ export default function Footer() {
                     <div className="md:col-span-1">
                         <div className="font-display text-2xl font-bold flex items-center gap-2 mb-4">
                             <span className="text-primary"><Sun className="w-6 h-6" /></span>
-                            Shrinathiji Solar
+                            Shrinathji Solar Enterprise
                         </div>
                         <p className="text-body text-sm mb-6 leading-relaxed">
                             Leading provider of premium solar energy solutions for residential, commercial, and industrial clients across India since 2005.
@@ -52,7 +52,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                                <span>+91 9423915121</span>
+                                <span>+91 7020919660</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-primary shrink-0" />
@@ -60,14 +60,14 @@ export default function Footer() {
                             </li>
                             {/* <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                                <span>hello@shrinathijisolar.com</span>
+                                <span>hello@shrinathjisolar.com</span>
                             </li> */}
                         </ul>
                     </div>
                 </div>
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-body">
-                    <p>&copy; 2024 Shrinathiji Solar. All rights reserved.</p>
+                    <p>&copy; 2024 Shrinathji Solar Enterprise. All rights reserved.</p>
                     <div className="flex gap-6">
                         <a href="#" className="hover:text-heading transition">Privacy Policy</a>
                         <a href="#" className="hover:text-heading transition">Terms of Service</a>

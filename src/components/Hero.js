@@ -1,74 +1,74 @@
 "use client";
 import React from 'react';
-import { PlayCircle, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import BackgroundParticles from './BackgroundParticles';
 
 export default function Hero() {
     return (
-        <section className="relative min-h-screen flex items-center pt-24 pb-12 px-4 overflow-hidden bg-background">
-            {/* Subtle Grain Texture Overlay */}
-            <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+        <section className="relative min-h-screen flex items-start lg:items-center overflow-hidden">
+            <BackgroundParticles count={300} />
 
-            <div className="relative z-10 w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div className="flex flex-col items-start text-left">
+            {/* Full-bleed background image */}
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="/hero-bg.jpg"
+                    alt="Solar energy"
+                    fill
+                    sizes="100vw"
+                    className="object-cover object-center"
+                    priority
+                />
+                {/* Mobile: dark overlay at top for text readability */}
+                {/* Desktop: dark overlay on right side */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent lg:bg-gradient-to-l lg:from-black/45 lg:via-black/25 lg:to-transparent" />
+            </div>
+
+            {/* Content */}
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-28 pb-8 lg:py-24 flex justify-start lg:justify-end">
+                <div className="w-full max-w-xl lg:max-w-lg">
+
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-sm font-medium text-primary"
+                        transition={{ duration: 0.6 }}
+                        className="mb-5 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/40 bg-primary/15 backdrop-blur-sm text-sm font-medium text-primary"
                     >
                         <span className="animate-pulse">🌞</span> India&apos;s Trusted Solar Brand
                     </motion.div>
 
                     <motion.h1
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 24 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.1 }}
-                        className="font-display text-5xl md:text-6xl lg:text-[72px] leading-tight font-bold mb-6 tracking-tight text-heading"
+                        transition={{ duration: 0.7, delay: 0.1 }}
+                        className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-[62px] leading-[1.08] font-bold mb-5 tracking-tight text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]"
                     >
-                        Power Your World<br />
+                        Power Your Home<br />
                         <span className="text-primary">With The Sun</span>
                     </motion.h1>
 
                     <motion.p
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 24 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-lg md:text-xl text-body max-w-xl mb-10"
+                        transition={{ duration: 0.7, delay: 0.2 }}
+                        className="text-base sm:text-lg text-white/85 mb-10 leading-relaxed drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)]"
                     >
-                        Shrinathiji Solar — Premium solar solutions for homes, businesses, and industry since 2005.
+                        Shrinathji Solar Enterprise - Premium solar solutions for homes, businesses, and industry since 2005.
                     </motion.p>
 
                     <motion.div
-                        initial={{ opacity: 0, y: 30 }}
+                        initial={{ opacity: 0, y: 24 }}
                         animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.3 }}
-                        className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+                        transition={{ duration: 0.7, delay: 0.3 }}
                     >
-                        <button className="bg-primary text-onPrimary font-bold text-lg py-4 px-8 rounded-[50px] hover:shadow-lg shadow-primary/30 transition-all hover:-translate-y-1 cursor-pointer">
-                            <a href='https://wa.me/919876543210?text=Hello, I am interested in your solar products.'>
-                                Get Free Quote →
-                            </a>
-                        </button>
+                        <a
+                            href="https://wa.me/917020919660?text=Hello, I am interested in your solar products."
+                            className="inline-flex items-center bg-primary text-onPrimary font-bold text-base sm:text-lg py-2 px-6 rounded-full hover:shadow-xl shadow-primary/40 transition-all duration-300 hover:-translate-y-1 hover:brightness-110"
+                        >
+                            Get Free Quote →
+                        </a>
                     </motion.div>
                 </div>
-
-                <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, delay: 0.2 }}
-                    className="relative w-full aspect-square md:aspect-[4/3] lg:aspect-square rounded-[24px] overflow-hidden shadow-2xl"
-                >
-                    <Image
-                        src="/hero-bg.png"
-                        alt="Solar energy"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover"
-                        priority
-                    />
-                </motion.div>
             </div>
         </section>
     );

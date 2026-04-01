@@ -39,7 +39,7 @@ export default function CTABanner() {
                     viewport={{ once: true }}
                     className="bg-primary text-onPrimary font-display font-bold text-xl py-5 px-10 rounded-full hover:bg-primary transition-colors shadow-lg shadow-primary/30 cursor-pointer"
                 >
-                    <a href="https://wa.me/919423915121?text=I'm interested in solar panels">
+                    <a href="https://wa.me/917020919660?text=I'm interested in solar panels">
                         Book Free Consultation
                     </a>
                 </motion.button>

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import BackgroundParticles from './BackgroundParticles';
 
 export default function Calculator() {
     const [bill, setBill] = useState(5000);
@@ -23,6 +24,8 @@ export default function Calculator() {
 
     return (
         <section id="calculator" className="py-24 relative z-10 bg-surface overflow-hidden">
+            <BackgroundParticles count={500} />
+
             <div className="container mx-auto px-6 max-w-[1200px] relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -77,26 +80,26 @@ export default function Calculator() {
                             <div className="space-y-6 relative z-10">
                                 <div className="flex justify-between items-center">
                                     <span className="text-onPrimary/80 font-medium">Recommended System</span>
-                                    <span className="font-display text-2xl font-bold">{results.kw} kW</span>
+                                    <span className="font-display text-lg font-bold">{results.kw} kW</span>
                                 </div>
 
                                 <div className="flex justify-between items-center">
                                     <span className="text-onPrimary/80 font-medium">Annual Savings</span>
-                                    <span className="font-display text-2xl font-bold">₹{results.savings.toLocaleString()}</span>
+                                    <span className="font-display text-lg font-bold">₹{results.savings.toLocaleString()}</span>
                                 </div>
 
                                 <div className="flex justify-between items-center">
                                     <span className="text-onPrimary/80 font-medium">CO₂ Reduction / Year</span>
-                                    <span className="font-display text-xl font-bold">{results.co2} Tons</span>
+                                    <span className="font-display text-lg font-bold">{results.co2} Tons</span>
                                 </div>
 
                                 <div className="flex justify-between items-center">
                                     <span className="text-onPrimary/80 font-medium">Payback Period</span>
-                                    <span className="font-display text-xl font-bold">{results.payback} Years</span>
+                                    <span className="font-display text-lg font-bold">{results.payback} Years</span>
                                 </div>
 
                                 <button className="w-full mt-6 bg-background text-primary font-bold py-4 rounded-[50px] hover:shadow-lg transition cursor-pointer">
-                                    <a href="https://wa.me/919423915121?text= I want to get a detailed quote" >
+                                    <a href="https://wa.me/917020919660?text= I want to get a detailed quote" >
                                         Get Detailed Quote
                                     </a>
                                 </button>

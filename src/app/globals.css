@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-/* 2️⃣ Tailwind import SECOND */
 @import "tailwindcss";
 
-/* 3️⃣ Then theme */
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-display: "Inter", sans-serif;
 
-  --color-primary: #6A9AB0;
+  --color-primary: #68B8E3;
   --color-background: #FFFFFF;
   --color-surface: #F8F9FA;
   --color-heading: #1A1A1A;

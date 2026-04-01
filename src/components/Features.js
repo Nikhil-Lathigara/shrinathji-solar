@@ -81,7 +81,7 @@ export default function Features() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 text-heading">Why Shrinathiji Solar?</h2>
+                    <h2 className="text-3xl md:text-5xl font-display font-bold mb-4 text-heading">Why Shrinathji Solar Enterprise?</h2>
                     <p className="text-body max-w-2xl mx-auto">We don&apos;t just sell panels, we deliver complete peace of mind.</p>
                 </motion.div>
 
