@@ -12,7 +12,7 @@ export default function Hero() {
             {/* Full-bleed background image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/hero-bg.jpg"
+                    src="/hero-bg.png"
                     alt="Solar energy"
                     fill
                     sizes="100vw"
@@ -21,11 +21,11 @@ export default function Hero() {
                 />
                 {/* Mobile: dark overlay at top for text readability */}
                 {/* Desktop: dark overlay on right side */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent lg:bg-gradient-to-l lg:from-black/45 lg:via-black/25 lg:to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/40 to-transparent" />
             </div>
 
             {/* Content */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-28 pb-8 lg:py-24 flex justify-start lg:justify-end">
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 pt-28 pb-8 lg:py-24 flex justify-start">
                 <div className="w-full max-w-xl lg:max-w-lg">
 
                     <motion.div

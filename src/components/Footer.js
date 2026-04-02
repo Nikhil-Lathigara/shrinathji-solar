@@ -52,7 +52,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                                <span>+91 7020919660</span>
+                                <a href="https://wa.me/917020919660?text=Hello, I am interested in your solar products."><span>+91 7020919660</span></a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-primary shrink-0" />

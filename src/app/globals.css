@@ -60,6 +60,23 @@
   100% { transform: scale(1); box-shadow: 0 0 20px var(--color-primary); }
 }
 
+/* Update the Keyframes to be more explicit */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Explicitly define the utility class */
+.animate-marquee {
+  display: flex !important;
+  width: max-content;
+  animation: marquee 30s linear infinite; /* Increased time for better readability */
+}
+
+/* Pause on hover is a nice touch for contact info */
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
 .custom-cursor {
   position: fixed;
   top: 0;

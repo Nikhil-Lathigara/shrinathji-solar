@@ -60,7 +60,7 @@ export default function Products() {
             title: "Residential Panels",
             description: "Sleek, black-on-black monocrystalline panels that blend perfectly with your roof.",
             icon: Home,
-            image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800",
+            image: "/hero-bg.jpg",
             features: ["Up to 22% Efficiency", "25-Year Warranty"],
             delay: 0.1
         },
@@ -68,7 +68,7 @@ export default function Products() {
             title: "Commercial & Industrial",
             description: "Heavy-duty solar solutions designed for maximum ROI and large-scale power generation.",
             icon: Factory,
-            image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800",
+            image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800",
             features: ["High Capacity Inverters", "Tax Depreciation Benefits"],
             delay: 0.2
         },
@@ -76,7 +76,7 @@ export default function Products() {
             title: "Solar Water Heaters",
             description: "Advanced evacuated tube collectors (ETC) for consistent hot water all year round.",
             icon: Droplets,
-            image: "https://images.unsplash.com/photo-1548337138-e87d889cc369?w=800",
+            image: "/solar_heater.jpg",
             features: ["Zero Electricity Cost", "PUF Insulated Tanks"],
             delay: 0.3
         }

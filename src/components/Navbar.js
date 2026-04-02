@@ -12,6 +12,28 @@ const navLinks = [
     { label: "Calculator", href: "#calculator" },
 ];
 
+function TopMarquee() {
+    return (
+        <div className="fixed top-0 left-0 w-full z-[60] bg-gray-200 text-black/80 overflow-hidden flex items-center h-8 border-b border-primary">
+            {/* This is the moving container */}
+            <div className="animate-marquee whitespace-nowrap flex">
+                {Array(10).fill(0).map((_, i) => (
+                    <div key={i} className="flex items-center">
+
+                        <span className="mx-8 text-[10px] font-bold uppercase tracking-widest">
+                            Vasant Lathigara : +91 7020919660
+                        </span>
+                        <span className="opacity-50">|</span>
+                        <span className="mx-8 text-[10px] font-bold uppercase tracking-widest">
+                            Vivek Soni : +91 9158768101
+                        </span>
+                        <span className="opacity-50">|</span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const [visible, setVisible] = useState(true);
@@ -46,10 +68,13 @@ export default function Navbar() {
 
     return (
         <>
+            {/* Top Marquee */}
+            <TopMarquee />
+
             {/* Navbar */}
             <nav
                 className={cn(
-                    "fixed w-full z-50 top-0 py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300",
+                    "fixed w-full z-50 top-8 py-4 px-6 md:px-12 flex justify-between items-center transition-all duration-300",
                     !visible && "-translate-y-full",
                     scrolled
                         ? "bg-background shadow-sm shadow-border"
@@ -123,7 +148,7 @@ export default function Navbar() {
                         className="fixed top-0 right-0 h-full w-72 z-[70] bg-background flex flex-col shadow-2xl"
                     >
                         {/* Header */}
-                        <div className="flex items-center justify-between px-6 py-5 border-b border-border">
+                        <div className="flex items-center justify-between px-6 py-5">
                             <div className="text-primary font-display text-base font-bold flex items-center gap-2 leading-tight">
                                 <span className="animate-pulse">🌞</span>
                                 <span>
